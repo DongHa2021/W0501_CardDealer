@@ -12,5 +12,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate((layoutInflater))
         //setContentView(R.layout.activity_main)
         setContentView(binding.root)
+
+        binding.card1.setImageResource(R.drawable.c_10_of_spades)
     }
 }
