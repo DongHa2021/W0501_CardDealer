@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         //setContentView(R.layout.activity_main)
         setContentView(binding.root)
 
-        getCardName(29)
+        getCardName(36)
 
         binding.card1.setImageResource(R.drawable.c_10_of_spades)
     }
@@ -31,6 +31,9 @@ class MainActivity : AppCompatActivity() {
         Log.i("getCardName : ",shape)
         val number = when(c%13){
             in 1..9 ->(c%13+1).toString()
+            10 -> "Jack"
+            11 -> "Queen"
+            12 -> "King"
             else ->"error"
         }
         Log.i("getCardName : ",number)
